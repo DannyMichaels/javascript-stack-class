@@ -15,7 +15,7 @@ class Stack {
   // Return and remove top element in stack
   // Return undefined if stack is empty
   pop() {
-    if (this.count == 0) return undefined;
+    if (this.count === 0) return undefined;
     let deleteItem = this.items[this.count - 1];
     this.count -= 1;
     console.log(`${deleteItem} removed`);
@@ -30,8 +30,8 @@ class Stack {
 
   // Check if stack is empty
   isEmpty() {
-    console.log(this.count == 0 ? 'Stack is empty' : 'Stack is NOT empty');
-    return this.count == 0;
+    console.log(this.count === 0 ? 'Stack is empty' : 'Stack is NOT empty');
+    return this.count === 0;
   }
 
   // Check size of stack
